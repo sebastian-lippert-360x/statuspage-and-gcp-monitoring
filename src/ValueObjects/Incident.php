@@ -186,7 +186,7 @@ class Incident
 	public function serialiseForStatuspage(): array
 	{
 		$stpIncident = [
-			'name' => 'Service outage',
+			'name' => $this->name,
 			'status' => 'investigating',
 			'metadata' => [
 				'data' => [
